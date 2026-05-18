@@ -11,7 +11,7 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Add client email + allowed fields here (NAMES MUST MATCH EXACTLY HOW YOU HAVE THEM IN THE FRONTEND)
 const CLIENTS = {
-    "jacopofb03@gmail.com": {
+    "thedeckbuilderofcolorado@gmail.com": {
         allowedFields: ["name", "phone", "email", "projectType", "message"]
     }
 };
