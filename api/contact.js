@@ -28,6 +28,7 @@ const CLIENTS = {
 // any clienT site needs to be inccluded -> include both www and without versions
 const allowedOrigins = [
     "http://localhost:3000",
+    "http://localhost:3000/confirm",
 
     // Richard's Site
     "https://www.deckbuilderofco.com",
