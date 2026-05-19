@@ -28,15 +28,14 @@ const CLIENTS = {
 // any clienT site needs to be inccluded -> include both www and without versions
 const allowedOrigins = [
     "http://localhost:3000",
-    "http://localhost:3000/confirm",
 
     // Richard's Site
     "https://www.deckbuilderofco.com",
     "https://deckbuilderofco.com",
 
     // John Site
-    "https://automailfast.com/confirm",
-    "https://www.automailfast.com/confirm"
+    "https://automailfast.com",
+    "https://www.automailfast.com"
 ];
 
 function setCors(res, origin) {
