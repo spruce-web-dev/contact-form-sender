@@ -34,8 +34,8 @@ const allowedOrigins = [
     "https://deckbuilderofco.com",
 
     // John Site
-    "https://automailfast.com",
-    "https://www.automailfast.com"
+    "https://automailfast.com/confirm",
+    "https://www.automailfast.com/confirm"
 ];
 
 function setCors(res, origin) {
