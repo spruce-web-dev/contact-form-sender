@@ -11,16 +11,31 @@ const resend = new Resend(process.env.RESEND_API_KEY);
 
 // Add client email + allowed fields here (NAMES MUST MATCH EXACTLY HOW YOU HAVE THEM IN THE FRONTEND)
 const CLIENTS = {
+    // Richard
     "thedeckbuilderofcolorado@gmail.com": {
         allowedFields: ["name", "phone", "email", "projectType", "message"]
-    }
+    },
+
+    // John
+    "jfranco@jfrancomarketing.com": {
+        allowedFields: [
+            "firstName","lastName", "email", "phone", "bestTime", "businessName",
+            "city", "state", "timeline", "notes", "terms"
+        ]
+    },
 };
 
 // any clienT site needs to be inccluded -> include both www and without versions
 const allowedOrigins = [
     "http://localhost:3000",
+
+    // Richard's Site
     "https://www.deckbuilderofco.com",
     "https://deckbuilderofco.com",
+
+    // John Site
+    "https://automailfast.com",
+    "https://www.automailfast.com"
 ];
 
 function setCors(res, origin) {
